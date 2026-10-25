@@ -39,7 +39,7 @@ export default function RootLayout({
   `;
 
   return (
-    <html lang="en" class="dark" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <script src="https://cdn.tailwindcss.com"></script>
         <script dangerouslySetInnerHTML={{ __html: tailwindConfig }} />
@@ -48,7 +48,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <style dangerouslySetInnerHTML={{ __html: customStyles }} />
       </head>
-      <body class="bg-[#090d16] text-gray-100 antialiased min-h-screen" suppressHydrationWarning>
+      <body className="bg-[#090d16] text-gray-100 antialiased min-h-screen" suppressHydrationWarning>
         {children}
       </body>
     </html>
